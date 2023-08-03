@@ -1,0 +1,191 @@
+body{
+    background-color: #012;
+    margin: 0px;
+    font-family: 'Ubuntu', sans-serif;
+    max-width: 1920px;
+    overflow-x: hidden;
+}
+
+.hidden{
+    background-color: #3f673f;
+    transition: all 1s;
+}
+
+.hidden > *{
+    opacity: 0;
+    transition: all 1s;
+}
+
+.show{
+    background-color: #012;
+}
+
+.show > *{
+    opacity: 1;
+}
+
+p{
+    font-size: 16px;
+}
+
+h1{
+    font-size: 70px;
+}
+
+h2{
+    font-size: 64px;
+    font-weight: 700;
+}
+
+a{
+    text-decoration: none;
+}
+
+nav{
+    z-index: 999;
+    position: fixed;
+    top: 0px;
+    left:0px;
+    right: 0px;
+    background-color: #FFF;
+    padding: 10px 50px;
+ 
+}
+
+nav ul{
+    padding: 0%;
+    margin: 0px;
+    list-style: none;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 30px;
+     
+}
+
+nav ul a{
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: normal;
+    color: #012;
+}
+
+nav ul a:hover{
+    color: #3F673F;
+    text-decoration: underline 2px;
+    transition: 0.5s ease;
+}
+
+.hero-home{
+    margin-top: 100px;
+    position: relative;
+    height: 100vh;
+    width: 100%;
+}
+
+.hero-home .wave{
+    width: 120%;
+    overflow: hidden;
+    position: absolute;
+    left: 0px;
+    bottom: 0px;
+}
+
+.wave-divider{
+    width: 120%;
+    position: relative;
+    top: 0px;
+    left: 0px;
+}
+
+.hero-home .main-logo{
+    width: 30%;
+    margin: 0 auto;
+    position: absolute;
+    left: 35%;
+    right: 35%;
+    bottom: 400px;
+}
+
+.hero-header{
+    text-align: center;
+    color: #FFF;
+    width: 50%;
+    position: absolute;
+    bottom: 250px;
+    left: 25%;
+    
+}
+
+.skills{
+    height: 170vh;
+    margin-top: -150px;
+    padding: 50px 50px;
+    color: #FFF;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+}
+
+.left, .right{
+    width: 45%;
+}
+
+.right{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+}
+
+.skills-grid{
+    display: grid;
+    grid-template-columns: 80px 80px 80px;
+    gap: 30px;  
+}
+
+.skills-grid-item{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 80px;
+    
+}
+
+.more-btn{
+    border: solid #FFF 0px;
+    color: #FFF;
+    border-radius: 10px;
+    padding: 10px;
+    font-size: 20px;
+    background-color: #3F673F;
+}
+
+.projects{
+    background: linear-gradient(129deg, #3F673F 0%, #008B8B 100%); 
+}
+
+.divider-top, .divider-bottom{
+    width: 200%;
+}
+
+.divider-bottom{
+    transform: rotate(180deg);
+}
+
+
+article{
+    width: 30%;
+    border-radius: 30px;
+    padding: 0px;
+    background: rgba(217, 217, 217, 0.70); 
+    box-shadow: -25px 7px 14px 0px rgba(193, 193, 193, 0.25) inset;
+    backdrop-filter: blur(15px); 
+}
+
+.shape-fill{
+    fill: #012;
+}
