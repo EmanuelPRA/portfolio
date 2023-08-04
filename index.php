@@ -41,24 +41,35 @@
 
 </div>
 
+<div class="projects">
+    <div class="wave-container"></div>
+        <div class="content">
+            <h2>Projects</h2>
+            <div class="card-container">
+            <article class="project-card">
+                <img src="img_avatar.png" alt="Avatar" class="image">
+                <a href="#">
+                    <div class="overlay">
+                        <h3>Project 1</h3>
+                        
+                    </div>
+                </a>
+            </article>
+                <article class="project-card">Project2</article>
+                <article class="project-card">Project3</article>
+            </div>
+        
+    </div>
+    
+    <div class="wave-container wave-bottom"></div>
+</div>
+
 
 
 
 
 <script src="js/intersection.js"></script>
-<script type="text/javascript">
-    document.addEventListener("mousemove", parallax);
-    function parallax(e){
-      document.querySelectorAll(".wave").forEach(function(move){
-
-        var moving_value = move.getAttribute("data-value");
-        var x = (e.clientX * moving_value) / 250;
-        var y = (e.clientY * moving_value + 15) / 250;
-
-        move.style.transform = "translateX(" + x + "px)translateY(" + y + "px";
-      });
-    }
-    </script>
+<script src="js/mouse-parallax.js"></script>
 
     
 
