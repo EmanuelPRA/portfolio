@@ -16,6 +16,28 @@ body{
     transition: all 1s;
 }
 
+.onleft .project-card{
+    opacity: 0;
+    transform: translateX(-30%);
+    transition: all 1s;
+}
+
+.onleft h2{
+    opacity: 0;
+    transform: translateX(-30%);
+    transition: all 0.5s;
+}
+
+.onright .project-card{
+    transform: translateX(0%);
+    opacity: 1;
+}
+
+.onright h2{
+    opacity: 1;
+    transform: translateX(0%);
+}
+
 .show{
     background-color: #012;
 }
@@ -216,7 +238,8 @@ article{
     right: 0;
     height: 100%;
     width: 100%;
-    opacity: 0;
+    transform: scale(1, 0);
+    opacity: 0.75;
     transition: .5s ease;
     background-color: #000;
     display: flex;
@@ -227,7 +250,7 @@ article{
   }
   
   .project-card:hover .overlay {
-    opacity: 0.75;
+    transform: scale(1, 1);
   }
 
   .overlay h3{
@@ -273,9 +296,53 @@ article{
     width: 100%;
 }
 
+.events, .events .content{
+    background: linear-gradient(105deg, #3F673F 0%, #008B8B 100%);
+}
+
+.events .content{
+    padding: 50px 0px;
+}
+
 footer{
     background-color: #012;
     color: #FFF;
+}
+
+.footer-content{
+    padding: 50px 0px;
+    display: flex;  
+    flex-direction: row;
+    align-items: flex-start;
+    justify-content: space-evenly;
+}
+
+.footer-section{
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: left;
+    gap: 10px;
+}
+
+.footer-section .social-row{
+    margin-top: 20px;
+    gap: 35px;
+}
+
+.footer-section .social-row img{
+    width: 40px;
+}
+
+.footer-section h2{
+    font-size: 32px;
+}
+
+.footer-section a{
+    font-size: 16px;
+    color: #FFF;
+    text-decoration: none;
+
 }
 
 .footer-lower{
@@ -292,3 +359,75 @@ footer{
     text-align: center;
 }
 
+.contact{
+    height: 100vh;
+    color: #FFF;
+    margin-bottom: 150px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.contact img{
+    width: 45px;
+}
+
+.social-row img{
+    width: 70px;
+}
+
+.contact p{
+    font-size: 24px;
+}
+
+.contact-cards{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+}
+
+.frost-contact{
+    display: flex;
+    flex-direction: column;
+    gap: 0px;
+
+    border-radius: 30px;
+    background: rgba(217, 217, 217, 0.30);
+    box-shadow: -25px 7px 14px 0px rgba(193, 193, 193, 0.25) inset;
+    backdrop-filter: blur(15px);
+    width: 540px;
+    padding: 30px;
+}
+
+.contact-row{
+    display: flex;
+    flex-direction: row;
+    gap: 10px;
+    width: 298px;
+}
+
+.social-row{
+    display: flex;
+    flex-direction: row;
+    gap: 80px;
+    justify-content: center;
+    align-items: center;
+}
+
+.contact-centered{
+    transform: translate(-150px, 150px);
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+}
+
+.frost-contact h3{
+    font-size: 32px;
+}
+
+.frost-contact h4{
+    font-size: 32px;
+    width: 366px;
+}
