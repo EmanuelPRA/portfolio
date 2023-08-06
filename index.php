@@ -85,22 +85,22 @@
 </div>
 
 
-<div class="contact">
+<div class="contact outside">
 
 <h2>Get in touch</h2>
 
     <div class="contact-cards">
-        <div class="frost-contact">
+        <div class="frost-contact frostleft">
             <h3>Want to send a message?</h3>
             <div class="contact-row"><img src="img/mail.svg" alt=""> <p>emanuel.pracic@gmail.com</p> </div>
             <div class="contact-row"><img src="img/phone.svg" alt=""> <p>+385 97 764 9332</p> </div>
             <div class="contact-row"><img src="img/bird.svg" alt=""> <p>Unfortunately I can’t keep carrier pigeons 😉</p></div>
         </div>
 
-        <div class="frost-contact contact-centered">
+        <div class="frost-contact contact-centered frostright">
             <h3>Want to connect?</h3>
             <div class="social-row"><img src="img/instagram.svg" alt=""> <img src="img/linkedin.svg" alt=""> <img src="img/github.svg" alt=""> </div>
-            <h4>Or maybe just find me at an event</h4>
+            <h4>Or maybe just find me at an <i style="color: #FE5656; text-decoration: underline;">event</i></h4>
         </div>
     </div>
 

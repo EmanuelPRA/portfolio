@@ -1,4 +1,4 @@
-<html>
+<!DOCTYPE html>
 <head>
     <title>Emanuel Pračić - Development && Design</title>
     <link rel="stylesheet" href="css/style.css">

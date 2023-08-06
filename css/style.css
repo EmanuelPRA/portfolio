@@ -121,6 +121,28 @@ nav ul a:hover{
     left: 0px;
 }
 
+.outside .frostleft{
+    opacity: 0;
+    transform: translateX(-100%);
+    transition: all 1s ease-in-out;
+}
+
+.movein .frostleft{
+    opacity: 1;
+    transform: translateX(0%);
+}
+
+.outside .frostright{
+    opacity: 0;
+    transform: translate(100%, 150px);
+    transition: all 1s ease-in-out;
+}
+
+.movein .frostright{
+    opacity: 1;
+    transform: translate(-150px, 150px);
+}
+
 .hero-home .main-logo{
     width: 30%;
     margin: 0 auto;
