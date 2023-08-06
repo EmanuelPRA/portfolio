@@ -15,8 +15,8 @@
 
 <ul>
     <li><img src="img/nav-logo.svg" alt=""></li>
-    <li><a href="#">Home</a></li>
-    <li><a href="#">Skills</a></li>
+    <li><a href="index.php">Home</a></li>
+    <li><a href="skills.php">Skills</a></li>
     <li><a href="#">Projects</a></li>
     <li><a href="#">Events</a></li>
     <li><a href="#">Contact</a></li>

@@ -4,7 +4,7 @@
 <div class="footer-section">
     <h2>Navigate</h2>
     <a href="#">Home</a>
-    <a href="#">Skills</a>
+    <a href="skills.php">Skills</a>
     <a href="#">Projects</a>
     <a href="#">Events</a>
     <a href="#">Contact</a>
