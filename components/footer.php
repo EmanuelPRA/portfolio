@@ -11,7 +11,7 @@
 </div>
 
 <div class="footer-section">
-    <h2>Contact</h2>
+    <h2><a href="contact.php">Contact</a></h2>
     <a href="#">emanuel.pracic@gmail.com</a>
     <a href="#">+385 97 764 9332</a>
     <div class="social-row"><img src="img/instagram.svg" alt=""> <img src="img/linkedin.svg" alt=""> <img src="img/github.svg" alt=""></div>

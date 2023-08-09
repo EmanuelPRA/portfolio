@@ -1,6 +1,7 @@
 const hidden = document.querySelectorAll('.hidden')
 const onLeft = document.querySelectorAll('.onleft')
 const frost = document.querySelectorAll('.outside')
+const fadein = document.querySelectorAll('.fadein')
 
 const observer = new IntersectionObserver(entries =>{
     entries.forEach(entry =>{
@@ -19,7 +20,18 @@ const frostObserver = new IntersectionObserver(entries =>{
         if(entry.isIntersecting){
             entry.target.classList.add("movein")
     
-    }
+        }
+    })
+}, {
+    threshold: 0.5,
+})
+
+const fadeObserver = new IntersectionObserver(entries =>{
+    entries.forEach(entry =>{
+        if(entry.isIntersecting){
+            entry.target.classList.add("fade-show")
+    
+        }
     })
 }, {
     threshold: 0.5,
@@ -36,4 +48,8 @@ onLeft.forEach(content =>{
 
 frost.forEach(content =>{
     frostObserver.observe(content)
+})
+
+fadein.forEach(content =>{
+    fadeObserver.observe(content)
 })
